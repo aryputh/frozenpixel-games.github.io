@@ -48,6 +48,7 @@ body {
 
 .brand img {
     position: relative;
+    transform: translateY(3px);
 	margin-left: 32px;
     width: 56px;
 }
