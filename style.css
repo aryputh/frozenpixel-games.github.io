@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rokkitt&display=swap");
-
 :root {
 	--text-color: #0077b6;
 	--selected-color: #023e8a;
@@ -37,6 +34,7 @@ body {
 }
 
 .brand a {
+	margin-left: -25px;
 	display: block;
 	transform: translateX(104px);
 	text-decoration: none;
@@ -47,10 +45,12 @@ body {
 }
 
 .brand img {
+	padding-top: 10px;
+	padding-bottom: 10px;
 	position: relative;
 	transform: translateY(3px);
 	margin-left: 25px;
-	width: 56px;
+	width: 36px;
 }
 
 .navbar-links {
