@@ -19,7 +19,7 @@ toggleButton.addEventListener("click", () => {
 
 footer.innerText = `Copyright ${year} by HappyGamer3194`;
 
-if (pageName == "index" || "") {
+if (pageName == "index" || !pageName) {
   title.innerText = `Cloudium Studios - Home`;
 } else {
   title.innerText = `Cloudium Studios - ${capitalizeFirstLetter(pageName)}`;
