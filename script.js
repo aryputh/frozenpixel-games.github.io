@@ -19,28 +19,59 @@ function capitalizeFirstLetter(string) {
 	return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-function hrefSetter(main, games, team, contact) {
+function linkSetter(main, games, team, contact) {
 	linkBrand.href = main;
 	linkHome.href = main;
 	linkGames.href = games;
 	linkTeam.href = team;
 	linkContact.href = contact;
+
+	linkBrand.innerText = "Cloudium Studios";
+	linkHome.innerText = "Home";
+	linkGames.innerText = "Games";
+	linkTeam.innerText = "Team";
+	linkContact.innerText = "Contact";
 }
 
 toggleButton.addEventListener("click", () => {
-  	navbarLinks.classList.toggle("active");
+	navbarLinks.classList.toggle("active");
 });
 
 footer.innerText = `Copyright ${year} by HappyGamer3194`;
 
 if (pageName == "index" || !pageName) {
-  	title.innerText = `Cloudium Studios - Home`;
+	linkHome.classList.add("active");
+	title.innerText = `Cloudium Studios - Home`;
 } else {
-  	title.innerText = `Cloudium Studios - ${capitalizeFirstLetter(pageName)}`;
+	title.innerText = `Cloudium Studios - ${capitalizeFirstLetter(pageName)}`;
 }
 
 if (window.location.hostname == "cloudiumstudios.github.io") {
-	hrefSetter("/", "games", "team", "contact");
+	linkSetter("/", "games", "team", "contact");
 } else {
-	hrefSetter("index.html", "games.html", "team.html", "contact.html");
+	linkSetter("index.html", "games.html", "team.html", "contact.html");
+}
+
+if (title.innerText.includes("Home")) {
+	linkHome.classList.add("active");
+} else {
+	linkHome.classList.remove("active");
+}
+
+if (title.innerText.includes("Games")) {
+	linkGames.classList.add("active");
+} else {
+	linkGames.classList.remove("active");
+}
+
+if (title.innerText.includes("Team")) {
+	linkTeam.classList.add("active");
+} else {
+	linkTeam.classList.remove("active");
+}
+
+if (title.innerText.includes("Contact")) {
+	linkContact.classList.add("active");
+} else {
+	linkContact.classList.remove("active");
 }

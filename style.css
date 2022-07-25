@@ -112,6 +112,6 @@ body {
 	padding-top: 15px;
 }
 
-.navbar-links .active a{
+.navbar-links ul li .active{
 	color: var(--selected-color);
 }
