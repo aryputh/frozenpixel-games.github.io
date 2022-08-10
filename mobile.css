@@ -38,23 +38,40 @@
 	}
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
 	.brand img {
 		visibility: hidden;
 	}
 	
 	.brand a {
-		transform: translate(110px, 8px);
+		transform: translate(60px, 8px);
 		font-size: 24px;
+	}
+
+	.home-text span{
+		top: 20%;
 	}
 }
 
 @media (max-width: 340px) {
     .brand a {
-        transform: translate(60px, 8px);
+        font-size: 0.7rem;
+		max-width: 100px;
+		text-align: center;
+		top: 0%;
     }
 
     .page-footer {
         font-size: 16px;
     }
+
+	.home-text span{
+		top: 10%;
+	}
+}
+
+@media (max-width: 200px) {
+	.brand a {
+		visibility: hidden;
+	}
 }
