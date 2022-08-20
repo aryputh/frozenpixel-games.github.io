@@ -77,7 +77,7 @@ class NavBar extends HTMLElement{
         this.attachShadow({mode:"open"})
         this.shadowRoot.appendChild(navBar.content.cloneNode(true))
         this.shadowRoot.getElementById("brand").addEventListener("click", ()=>{
-            window.open("https://frozenpixel-games.github.io/index.html")
+            window.open("https://frozenpixel-games.github.io/")
         })
     }
 }
