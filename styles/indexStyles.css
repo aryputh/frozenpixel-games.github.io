@@ -1,0 +1,48 @@
+@import url("globalStyles.css");
+
+.hero {
+  width: 100vw;
+  height: 70vh;
+  background-color: var(--pixel-2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: calc(20vw * 4 / 3);
+  height: calc(40vh * 4 / 3);
+  border-radius: 50%;
+  background-image: url(../images/main_logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 40px;
+}
+
+.heroText {
+  color: white;
+  margin: 40px;
+  font-size: 1.7rem;
+  line-height: 1.2;
+  cursor: default;
+}
+
+.space {
+  height: 20px;
+}
+
+.downloadGames {
+  width: 200px;
+  height: 60px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  transition: 0.3s ease-in-out;
+  background-color: var(--pixel-1);
+  cursor: pointer;
+}
+
+.downloadGames:hover {
+  background-color: var(--pixel-4);
+}

@@ -1,8 +1,7 @@
-import { colors } from "../scripts/colors.js"
+import { colors } from "../scripts/colors.js";
 
-const navBar = document.createElement("template")
-navBar.innerHTML =
-`
+const navBar = document.createElement("template");
+navBar.innerHTML = `
 <style>
 header{
     width:100vw;
@@ -15,7 +14,7 @@ header{
 }
 
 .brand{
-    margin:20px;
+    margin:40px;
     cursor:pointer;
 }
 
@@ -27,7 +26,7 @@ header{
 .t1{
     font-size: 2rem;
     font-weight: bold;
-    color:${colors["white"]};
+    color:#fff;
 }
 
 .t2{
@@ -35,14 +34,14 @@ header{
 }
 
 .items{
-    margin:20px;
+    margin:40px;
     font-size: 1.3rem;
     cursor:pointer;
 }
 
 .items a{
     text-decoration: none;
-    color:${colors["white"]};
+    color:#fff;
     padding: 10px;
     transition: 0.2s ease-in-out;
 }
@@ -69,17 +68,17 @@ Frozen<span class="t2">Pixel</span>
 <a href="contact.html">Contact</a>
 </div>
 </header>
-`
+`;
 
-class NavBar extends HTMLElement{
-    constructor(){
-        super()
-        this.attachShadow({mode:"open"})
-        this.shadowRoot.appendChild(navBar.content.cloneNode(true))
-        this.shadowRoot.getElementById("brand").addEventListener("click", ()=>{
-            window.open("https://frozenpixel-games.github.io/", "_self")
-        })
-    }
+class NavBar extends HTMLElement {
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" });
+    this.shadowRoot.appendChild(navBar.content.cloneNode(true));
+    this.shadowRoot.getElementById("brand").addEventListener("click", () => {
+      window.open("https://frozenpixel-games.github.io/", "_self");
+    });
+  }
 }
 
-window.customElements.define("nav-bar", NavBar)
+window.customElements.define("nav-bar", NavBar);
