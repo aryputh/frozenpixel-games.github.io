@@ -18,19 +18,14 @@ header{
     cursor:pointer;
 }
 
-.logo{
-    width:2vw;
-    height:5vh;
-}
-
 .t1{
     font-size: 2rem;
     font-weight: bold;
-    color:#fff;
+    color:${colors["pixel-5"]};
 }
 
 .t2{
-    color:${colors["pixel-5"]};
+    color:${colors["pixel-2"]};
 }
 
 .items{
@@ -47,7 +42,7 @@ header{
 }
 
 .items a:hover{
-    color:${colors["pixel-5"]};
+    color:${colors["pixel-2"]};
 }
 
 </style>
@@ -75,7 +70,10 @@ class NavBar extends HTMLElement {
     super();
     this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(navBar.content.cloneNode(true));
-    this.shadowRoot.getElementById("brand").addEventListener("click", () => {
+
+    let brand = this.shadowRoot.getElementById("brand");
+
+    brand.addEventListener("click", () => {
       window.open("https://frozenpixel-games.github.io/", "_self");
     });
   }
