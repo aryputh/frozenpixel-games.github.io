@@ -8,6 +8,10 @@
   --pixel-7: #0597e9;
 }
 
+* {
+  overflow-x: hidden;
+}
+
 .title {
   margin: 40px;
   text-align: center;
