@@ -73,7 +73,7 @@
   background-color: var(--pixel-2);
 }
 
-.footer {
+/* footer {
   width: 100vw;
   height: 10vh;
   display: flex;
@@ -82,4 +82,4 @@
   font-size: 1.3rem;
   color: white;
   background-color: var(--pixel-3);
-}
+} */

@@ -5,74 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Games</title>
+    <link rel="shortcut icon" href="images/main_favicon.png" type="image/x-icon"/>
     <link rel="stylesheet" href="styles/globalStyles.css" />
     <link rel="stylesheet" href="styles/gamesStyles.css" />
     <script defer src="components/navbar.js" type="module"></script>
     <script defer src="components/gameHolder.js" type="module"></script>
+    <script defer src="scripts/global.js"></script>
   </head>
   <body>
     <nav-bar></nav-bar>
     <div class="title"><h1>Our Games</h1></div>
-    <div class="gameRow">
-      <game-holder
-        gameName="Jelly Hunt"
-        imageSrc="images/jellyHunt.png"
-        desc="Platformer game for Android"
-        gameUrl="https://play.google.com/store/apps/details?id=com.HappyGamer3194_aryputh.JellyHunt"
-      ></game-holder>
-
-      <game-holder
-        gameName="Dave the Watcher"
-        imageSrc="images/daveTheWatcher.png"
-        desc="Platformer game for Windows"
-        gameURL="https://happygamer3194.itch.io/dave-the-watcher"
-      ></game-holder>
-
-      <game-holder
-        gameName="Gravity Swapper"
-        imageSrc="images/gravitySwapper.png"
-        desc="Platformer game for Windows"
-        gameURL="https://happygamer3194.itch.io/gravity-swapper"
-      ></game-holder>
-    </div>
-    <div class="gameRow">
-      <game-holder
-        gameName="The Lost Spirit"
-        imageSrc="images/lostSpirit.png"
-        desc="A fun puzzle game for Windows"
-        gameURL="https://happygamer3194.itch.io/the-lost-spirit"
-      ></game-holder>
-
-      <game-holder
-        gameName="Elemental Wizard"
-        imageSrc="images/elementalWizard.png"
-        desc="An Educational game for Windows"
-        gameURL="https://happygamer3194.itch.io/elements-sandbox-game"
-      ></game-holder>
-
-      <game-holder
-        gameName="Happy Line"
-        imageSrc="images/happyLine.png"
-        desc="A fun rhythm based game for Windows"
-        gameURL="https://happygamer3194.itch.io/happyline"
-      ></game-holder>
-    </div>
-
-    <div class="gameRow">
-      <game-holder
-        gameName="Mini Ping"
-        imageSrc="images/miniPing.png"
-        desc="Ping pong game for Windows"
-        gameURL="https://happygamer3194.itch.io/mini-ping"
-      ></game-holder>
-
-      <game-holder
-        gameName="Musical Journey"
-        imageSrc="images/musicalJourney.png"
-        desc="An adventure game for Windows"
-        gameURL="https://happygamer3194.itch.io/musical-journey"
-      ></game-holder>
-    </div>
-    <div class="footer">&copy; 2022 FrozenPixel Games</div>
+    <main>
+        <div class="gameRow">
+          <game-holder
+            gameName="Jelly Hunt"
+            imageSrc="images/jellyHunt.png"
+            desc="Platformer game for Android"
+            gameUrl="https://play.google.com/store/apps/details?id=com.HappyGamer3194_aryputh.JellyHunt"
+          ></game-holder>
+    
+          <game-holder
+            gameName="Dave the Watcher"
+            imageSrc="images/daveTheWatcher.png"
+            desc="Platformer game for Windows"
+            gameURL="https://happygamer3194.itch.io/dave-the-watcher"
+          ></game-holder>
+    
+          <game-holder
+            gameName="Gravity Swapper"
+            imageSrc="images/gravitySwapper.png"
+            desc="Platformer game for Windows"
+            gameURL="https://happygamer3194.itch.io/gravity-swapper"
+          ></game-holder>
+        </div>
+        <div class="gameRow">
+          <game-holder
+            gameName="The Lost Spirit"
+            imageSrc="images/lostSpirit.png"
+            desc="A fun puzzle game for Windows"
+            gameURL="https://happygamer3194.itch.io/the-lost-spirit"
+          ></game-holder>
+    
+          <game-holder
+            gameName="Elemental Wizard"
+            imageSrc="images/elementalWizard.png"
+            desc="An Educational game for Windows"
+            gameURL="https://happygamer3194.itch.io/elements-sandbox-game"
+          ></game-holder>
+    
+          <game-holder
+            gameName="Happy Line"
+            imageSrc="images/happyLine.png"
+            desc="A fun rhythm based game for Windows"
+            gameURL="https://happygamer3194.itch.io/happyline"
+          ></game-holder>
+        </div>
+    
+        <div class="gameRow">
+          <game-holder
+            gameName="Mini Ping"
+            imageSrc="images/miniPing.png"
+            desc="Ping pong game for Windows"
+            gameURL="https://happygamer3194.itch.io/mini-ping"
+          ></game-holder>
+    
+          <game-holder
+            gameName="Musical Journey"
+            imageSrc="images/musicalJourney.png"
+            desc="An adventure game for Windows"
+            gameURL="https://happygamer3194.itch.io/musical-journey"
+          ></game-holder>
+        </div>
+    </main>
+    <footer></footer>
   </body>
 </html>

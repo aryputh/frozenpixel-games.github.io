@@ -57,10 +57,10 @@ Frozen<span class="t2">Pixel</span>
 </div>
 
 <div class = "items">
-<a href="games.html">Games</a>
-<a href="team.html">Team</a>
-<a href="">Merch</a> 
-<a href="contact.html">Contact</a>
+<a class="nav-link" href="">Games</a>
+<a class="nav-link" href="">Team</a>
+<a class="nav-link" href="">Merch</a> 
+<a class="nav-link" href="">Contact</a>
 </div>
 </header>
 `;
@@ -72,9 +72,23 @@ class NavBar extends HTMLElement {
     this.shadowRoot.appendChild(navBar.content.cloneNode(true));
 
     let brand = this.shadowRoot.getElementById("brand");
+    let links = this.shadowRoot.querySelectorAll(".nav-link");
+    let domain = null;
+
+    if (window.location.hostname === "frozenpixel-games.github.io") {
+        domain = "https://frozenpixel-games.github.io/";
+        for (let link of links) {
+            link.href = link.innerText.toLowerCase();
+        }
+    } else {
+        domain = "/index.html";
+        for (let link of links) {
+            link.href = `${link.innerText.toLowerCase()}.html`;
+        }
+    }
 
     brand.addEventListener("click", () => {
-      window.open("https://frozenpixel-games.github.io/", "_self");
+      window.open(domain, "_self");
     });
   }
 }
