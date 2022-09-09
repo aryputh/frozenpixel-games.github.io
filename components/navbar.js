@@ -82,7 +82,7 @@ class NavBar extends HTMLElement {
         link.href = link.innerText.toLowerCase();
       }
     } else {
-      domain = "/home.html";
+      domain = "/index.html";
       for (let link of links) {
         link.href = `${link.innerText.toLowerCase()}.html`;
       }
