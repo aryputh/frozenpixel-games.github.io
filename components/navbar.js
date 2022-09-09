@@ -84,7 +84,11 @@ class NavBar extends HTMLElement {
     } else {
       domain = "/index.html";
       for (let link of links) {
-        link.href = `${link.innerText.toLowerCase()}.html`;
+        if (link.innerText == "Home") {
+          link.href = "index.html";
+        } else {
+          link.href = `${link.innerText.toLowerCase()}.html`;
+        }
       }
     }
 
