@@ -57,7 +57,6 @@ Frozen<span class="t2">Pixel</span>
 </div>
 
 <div class = "items">
-<a class="nav-link" href="">Home</a>
 <a class="nav-link" href="">Games</a>
 <a class="nav-link" href="">Team</a>
 <a class="nav-link" href="">Merch</a> 
@@ -84,11 +83,7 @@ class NavBar extends HTMLElement {
     } else {
       domain = "/index.html";
       for (let link of links) {
-        if (link.innerText == "Home") {
-          link.href = "index.html";
-        } else {
-          link.href = `${link.innerText.toLowerCase()}.html`;
-        }
+        link.href = `${link.innerText.toLowerCase()}.html`;
       }
     }
 
