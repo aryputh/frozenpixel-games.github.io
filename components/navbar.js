@@ -57,6 +57,7 @@ Frozen<span class="t2">Pixel</span>
 </div>
 
 <div class = "items">
+<a class="nav-link" href="">Home</a>
 <a class="nav-link" href="">Games</a>
 <a class="nav-link" href="">Team</a>
 <a class="nav-link" href="">Merch</a> 
@@ -76,15 +77,15 @@ class NavBar extends HTMLElement {
     let domain = null;
 
     if (window.location.hostname === "frozenpixel-games.github.io") {
-        domain = "https://frozenpixel-games.github.io/";
-        for (let link of links) {
-            link.href = link.innerText.toLowerCase();
-        }
+      domain = "https://frozenpixel-games.github.io/";
+      for (let link of links) {
+        link.href = link.innerText.toLowerCase();
+      }
     } else {
-        domain = "/index.html";
-        for (let link of links) {
-            link.href = `${link.innerText.toLowerCase()}.html`;
-        }
+      domain = "/home.html";
+      for (let link of links) {
+        link.href = `${link.innerText.toLowerCase()}.html`;
+      }
     }
 
     brand.addEventListener("click", () => {
