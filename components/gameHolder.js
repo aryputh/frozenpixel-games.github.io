@@ -1,4 +1,4 @@
-import { colors } from "../scripts/colors.js";
+import { colors } from "../scripts/colors.min.js";
 
 const game = document.createElement("template");
 game.innerHTML = `
@@ -55,20 +55,20 @@ game.innerHTML = `
 `;
 
 class GameHolder extends HTMLElement {
-  constructor() {
-    super();
-    this.attachShadow({ mode: "open" });
-    this.shadowRoot.appendChild(game.content.cloneNode(true));
-    this.shadowRoot.getElementById("gameName").innerText =
-      this.getAttribute("gameName");
-    this.shadowRoot.getElementById("gameImage").src =
-      this.getAttribute("imageSrc");
-    this.shadowRoot.getElementById("desc").innerText =
-      this.getAttribute("desc");
-    this.shadowRoot.getElementById("download").addEventListener("click", () => {
-      window.open(this.getAttribute("gameUrl"));
-    });
-  }
+    constructor() {
+        super();
+        this.attachShadow({ mode: "open" });
+        this.shadowRoot.appendChild(game.content.cloneNode(true));
+        this.shadowRoot.getElementById("gameName").innerText =
+            this.getAttribute("gameName");
+        this.shadowRoot.getElementById("gameImage").src =
+            this.getAttribute("imageSrc");
+        this.shadowRoot.getElementById("desc").innerText =
+            this.getAttribute("desc");
+        this.shadowRoot.getElementById("download").addEventListener("click", () => {
+            window.open(this.getAttribute("gameUrl"));
+        });
+    }
 }
 
 window.customElements.define("game-holder", GameHolder);

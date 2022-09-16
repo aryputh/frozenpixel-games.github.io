@@ -1,4 +1,4 @@
-import { colors } from "../scripts/colors.js";
+import { colors } from "../scripts/colors.min.js";
 
 const navBar = document.createElement("template");
 navBar.innerHTML = `
@@ -66,31 +66,31 @@ Frozen<span class="t2">Pixel</span>
 `;
 
 class NavBar extends HTMLElement {
-  constructor() {
-    super();
-    this.attachShadow({ mode: "open" });
-    this.shadowRoot.appendChild(navBar.content.cloneNode(true));
+    constructor() {
+        super();
+        this.attachShadow({ mode: "open" });
+        this.shadowRoot.appendChild(navBar.content.cloneNode(true));
 
-    let brand = this.shadowRoot.getElementById("brand");
-    let links = this.shadowRoot.querySelectorAll(".nav-link");
-    let domain = null;
+        let brand = this.shadowRoot.getElementById("brand");
+        let links = this.shadowRoot.querySelectorAll(".nav-link");
+        let domain = null;
 
-    if (window.location.hostname === "frozenpixel-games.github.io") {
-      domain = "https://frozenpixel-games.github.io/";
-      for (let link of links) {
-        link.href = link.innerText.toLowerCase();
-      }
-    } else {
-      domain = "/index.html";
-      for (let link of links) {
-        link.href = `${link.innerText.toLowerCase()}.html`;
-      }
+        if (window.location.hostname === "frozenpixel-games.github.io") {
+            domain = "https://frozenpixel-games.github.io/";
+            for (let link of links) {
+                link.href = link.innerText.toLowerCase();
+            }
+        } else {
+            domain = "/index.html";
+            for (let link of links) {
+                link.href = `${link.innerText.toLowerCase()}.html`;
+            }
+        }
+
+        brand.addEventListener("click", () => {
+            window.open(domain, "_self");
+        });
     }
-
-    brand.addEventListener("click", () => {
-      window.open(domain, "_self");
-    });
-  }
 }
 
 window.customElements.define("nav-bar", NavBar);
