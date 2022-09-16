@@ -1,4 +1,4 @@
-import { colors } from "../scripts/colors.min.js";
+import { colors } from "../scripts/colors.js";
 
 const contact = document.createElement("template");
 contact.innerHTML = `
@@ -55,20 +55,20 @@ contact.innerHTML = `
 `;
 
 class ContactHolder extends HTMLElement {
-    constructor() {
-        super();
-        this.attachShadow({ mode: "open" });
-        this.shadowRoot.appendChild(contact.content.cloneNode(true));
-        this.shadowRoot.getElementById("contactTypeLogo").src =
-            this.getAttribute("contactTypeLogo");
-        this.shadowRoot.getElementById("desc").innerText =
-            this.getAttribute("desc");
-        this.shadowRoot.getElementById("action").innerText =
-            this.getAttribute("buttonText");
-        this.shadowRoot.getElementById("action").addEventListener("click", () => {
-            window.open(this.getAttribute("contactLink"));
-        });
-    }
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" });
+    this.shadowRoot.appendChild(contact.content.cloneNode(true));
+    this.shadowRoot.getElementById("contactTypeLogo").src =
+      this.getAttribute("contactTypeLogo");
+    this.shadowRoot.getElementById("desc").innerText =
+      this.getAttribute("desc");
+    this.shadowRoot.getElementById("action").innerText =
+      this.getAttribute("buttonText");
+    this.shadowRoot.getElementById("action").addEventListener("click", () => {
+      window.open(this.getAttribute("contactLink"));
+    });
+  }
 }
 
 window.customElements.define("contact-holder", ContactHolder);
