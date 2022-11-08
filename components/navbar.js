@@ -65,6 +65,23 @@ header{
     display: block;
     margin: 40px;
   }
+
+  .items {
+    display: none;
+  }
+
+  .items.active {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 10vh;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: ${colors["pixel-1"]};
+  }
 }
 
 </style>
@@ -99,6 +116,8 @@ class NavBar extends HTMLElement {
     this.shadowRoot.appendChild(navBar.content.cloneNode(true));
 
     let brand = this.shadowRoot.querySelector("#brand");
+    let hamburger = this.shadowRoot.querySelector(".hamburger");
+    let items = this.shadowRoot.querySelector(".items");
     let links = this.shadowRoot.querySelectorAll(".nav-link");
     let domain = null;
 
@@ -116,6 +135,10 @@ class NavBar extends HTMLElement {
 
     brand.addEventListener("click", () => {
       window.open(domain, "_self");
+    });
+
+    hamburger.addEventListener("click", () => {
+      items.classList.toggle("active");
     });
   }
 }
