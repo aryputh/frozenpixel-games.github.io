@@ -5,9 +5,9 @@ contact.innerHTML = `
 
 <style>
 .contactHolder{
-    width:280px;
-    height:400px;
-    background-color:${colors["pixel-2"]};
+    width: 280px;
+    height: 400px;
+    background-color:${colors["pixel-5"]};
     border-radius:25px;
     display:flex;
     flex-direction:column;
@@ -59,13 +59,13 @@ class ContactHolder extends HTMLElement {
     super();
     this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(contact.content.cloneNode(true));
-    this.shadowRoot.getElementById("contactTypeLogo").src =
+    this.shadowRoot.querySelector("#contactTypeLogo").src =
       this.getAttribute("contactTypeLogo");
-    this.shadowRoot.getElementById("desc").innerText =
+    this.shadowRoot.querySelector("#desc").innerText =
       this.getAttribute("desc");
-    this.shadowRoot.getElementById("action").innerText =
+    this.shadowRoot.querySelector("#action").innerText =
       this.getAttribute("buttonText");
-    this.shadowRoot.getElementById("action").addEventListener("click", () => {
+    this.shadowRoot.querySelector("#action").addEventListener("click", () => {
       window.open(this.getAttribute("contactLink"));
     });
   }

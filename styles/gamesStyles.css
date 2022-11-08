@@ -9,21 +9,17 @@
 }
 
 * {
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
 
-.title {
-  margin: 40px;
-  text-align: center;
-  font-size: 2rem;
-}
-
 .gameRow {
-  width: 100vw;
-  height: fit-content;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 40px;
-  align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
 }

@@ -1,4 +1,4 @@
-export let colors = {
+export const colors = {
   "pixel-1": "#FFD167",
   "pixel-2": "#F04770",
   "pixel-3": "#6A30C3",

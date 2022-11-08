@@ -32,17 +32,39 @@ header{
     margin:40px;
     font-size: 1.3rem;
     cursor:pointer;
-}
-
-.items a{
+  }
+  
+  .items a{
     text-decoration: none;
     color:#fff;
     padding: 10px;
     transition: 0.2s ease-in-out;
+  }
+  
+  .items a:hover{
+    color:${colors["pixel-2"]};
+  }
+  
+.hamburger {
+  display: none;
+  cursor: pointer;
 }
 
-.items a:hover{
-    color:${colors["pixel-2"]};
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+@media(max-width: 768px) {
+  .hamburger {
+    display: block;
+    margin: 40px;
+  }
 }
 
 </style>
@@ -62,6 +84,11 @@ Frozen<span class="t2">Pixel</span>
 <a class="nav-link" href="">Merch</a> 
 <a class="nav-link" href="">Contact</a>
 </div>
+<div class="hamburger">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</div>
 </header>
 `;
 
@@ -71,7 +98,7 @@ class NavBar extends HTMLElement {
     this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(navBar.content.cloneNode(true));
 
-    let brand = this.shadowRoot.getElementById("brand");
+    let brand = this.shadowRoot.querySelector("#brand");
     let links = this.shadowRoot.querySelectorAll(".nav-link");
     let domain = null;
 

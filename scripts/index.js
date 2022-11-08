@@ -1,7 +1,7 @@
-let playStore = document.getElementById("playStoreLink");
-let latestGame = document.getElementById("latestGame");
-let itch = document.getElementById("itchLink");
-let info = document.getElementById("info");
+const playStore = document.querySelector("#playStoreLink");
+const latestGame = document.querySelector("#latestGame");
+const itch = document.querySelector("#itchLink");
+const info = document.querySelector("#info");
 
 playStore.addEventListener("click", () => {
   window.open("https://play.google.com/store/apps/dev?id=5025286485091152628");
@@ -9,16 +9,6 @@ playStore.addEventListener("click", () => {
 
 itch.addEventListener("click", () => {
   window.open("https://happygamer3194.itch.io/");
-});
-
-latestGame.addEventListener("mouseover", () => {
-  latestGame.style.transform = "translateY(-40px)";
-  info.style.opacity = "100%";
-});
-
-latestGame.addEventListener("mouseleave", () => {
-  latestGame.style.transform = "";
-  info.style.opacity = "0%";
 });
 
 latestGame.addEventListener("click", () => {

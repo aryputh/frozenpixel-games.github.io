@@ -8,27 +8,17 @@
   --pixel-7: #0597e9;
 }
 
-* {
+body {
+  background-color: var(--pixel-7);
   overflow-x: hidden;
 }
 
 .main {
-  width: 100vw;
-  height: 90vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
-  align-items: center;
-}
-
-.title {
-  font-size: 4rem;
-}
-
-.row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
+  margin-bottom: 16.7rem;
+  margin-top: 5rem;
 }

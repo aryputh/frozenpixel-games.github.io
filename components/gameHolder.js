@@ -4,11 +4,10 @@ const game = document.createElement("template");
 game.innerHTML = `
 
 <style>
-.gameHolder{
-    width:360px;
-    height:460px;
+.gameHolder {
     background-color:${colors["pixel-5"]};
     border-radius:25px;
+    padding: 10px;
     display:flex;
     flex-direction:column;
     align-items: center;
@@ -17,17 +16,17 @@ game.innerHTML = `
     transition: 0.2s ease-in-out;
 }
 
-.gameHolder:hover{
+.gameHolder:hover {
   background-color:${colors["pixel-6"]};
 }
 
-.gameImage{
+.gameImage {
     width:300px;
     height:220px;
     border-radius:25px;
 }
 
-.download{
+.download {
     width: 200px;
     height: 60px;
     font-size: 1rem;
@@ -40,7 +39,7 @@ game.innerHTML = `
     cursor: pointer;
 }
 
-.download:hover{
+.download:hover {
     background-color: var(--pixel-2)
 }
 
@@ -59,13 +58,13 @@ class GameHolder extends HTMLElement {
     super();
     this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(game.content.cloneNode(true));
-    this.shadowRoot.getElementById("gameName").innerText =
+    this.shadowRoot.querySelector("#gameName").innerText =
       this.getAttribute("gameName");
-    this.shadowRoot.getElementById("gameImage").src =
+    this.shadowRoot.querySelector("#gameImage").src =
       this.getAttribute("imageSrc");
-    this.shadowRoot.getElementById("desc").innerText =
+    this.shadowRoot.querySelector("#desc").innerText =
       this.getAttribute("desc");
-    this.shadowRoot.getElementById("download").addEventListener("click", () => {
+    this.shadowRoot.querySelector("#download").addEventListener("click", () => {
       window.open(this.getAttribute("gameUrl"));
     });
   }

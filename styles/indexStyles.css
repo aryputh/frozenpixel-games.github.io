@@ -13,42 +13,30 @@
   height: 80vh;
   background-color: var(--pixel-7);
   display: flex;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
 }
 
 .latestGame {
-  background-image: url(../images/jellyHunt.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
+  margin-top: 5vh;
   border-radius: 40px;
-  margin: 40px;
   cursor: pointer;
   display: flex;
-  transition: 0.2s ease-in-out;
-  justify-content: center;
-  align-items: center;
 }
 
-.info {
-  transition: 0.2s ease-in-out;
-  margin-top: 430px;
-  font-size: 1.3rem;
-  color: white;
-  opacity: 0;
+.latestGame:hover {
+  transform: scale(1.1);
 }
 
 .heroText {
   color: white;
   margin: 40px;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   line-height: 1.2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 .space {
@@ -63,7 +51,6 @@
   border: none;
   border-radius: 30px;
   color: white;
-  transition: 0.3s ease-in-out;
   background-color: var(--pixel-1);
   cursor: pointer;
 }
@@ -73,7 +60,7 @@
   background-color: var(--pixel-2);
 }
 
-/* footer {
+footer {
   width: 100vw;
   height: 10vh;
   display: flex;
@@ -82,4 +69,4 @@
   font-size: 1.3rem;
   color: white;
   background-color: var(--pixel-3);
-} */
+}
