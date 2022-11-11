@@ -1,0 +1,26 @@
+fetch("./components/gameCard/index.html")
+    .then(stream => stream.text())
+    .then(text => define(text));
+
+function define(html) {
+    const template = document.createElement("template");
+    template.innerHTML = html;
+    class GameCard extends HTMLElement {
+      constructor() {
+        super();
+        this.attachShadow({ mode: "open" });
+        this.shadowRoot.appendChild(template.content.cloneNode(true));
+        this.shadowRoot.querySelector("#gameName").innerText =
+          this.getAttribute("gameName");
+        this.shadowRoot.querySelector("#gameImage").src =
+          this.getAttribute("imageSrc");
+        this.shadowRoot.querySelector("#desc").innerText =
+          this.getAttribute("desc");
+        this.shadowRoot.querySelector("#download").addEventListener("click", () => {
+          window.open(this.getAttribute("gameUrl"));
+        });
+      }
+    }
+    
+    window.customElements.define("game-card", GameCard);    
+}
