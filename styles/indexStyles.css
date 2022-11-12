@@ -23,7 +23,6 @@
   height: 300px;
   margin-top: 5vh;
   border-radius: 40px;
-  cursor: pointer;
   display: flex;
 }
 
@@ -52,7 +51,6 @@
   border-radius: 30px;
   color: white;
   background-color: var(--pixel-1);
-  cursor: pointer;
 }
 
 .playStore:hover,

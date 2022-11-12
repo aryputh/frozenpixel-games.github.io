@@ -20,7 +20,6 @@ header{
 
 .brand{
     margin:40px;
-    cursor:pointer;
 }
 
 .t1{
@@ -36,7 +35,6 @@ header{
 .items{
     margin:40px;
     font-size: 1.3rem;
-    cursor:pointer;
   }
   
   .items a{
@@ -51,7 +49,6 @@ header{
   
 #hamburger {
   display: none;
-  cursor: pointer;
 }
 
 .bar {
