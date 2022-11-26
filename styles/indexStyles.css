@@ -26,10 +26,6 @@
   display: flex;
 }
 
-.latestGame:hover {
-  transform: scale(1.1);
-}
-
 .heroText {
   color: white;
   margin: 40px;
