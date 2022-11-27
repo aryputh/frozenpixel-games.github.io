@@ -18,7 +18,8 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 40px;
+  width: 100vw;
+  height: 80vh;
   justify-content: center;
-  margin-bottom: 16.7rem;
-  margin-top: 5rem;
+  align-items: center;
 }
