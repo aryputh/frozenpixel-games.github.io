@@ -16,7 +16,7 @@
   flex-direction:column;
   align-items: center;
   justify-content:top;
-  color:white;
+  color: black;
 }
 
 .gameHolder:hover {
@@ -42,4 +42,8 @@ background-color: var(--pixel-6);
 
 .download:hover {
   background-color: var(--pixel-2)
+}
+
+#desc {
+  color: white;
 }
