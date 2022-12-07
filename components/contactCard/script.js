@@ -11,7 +11,6 @@ function define(html) {
       template.innerHTML = html;
       this.shadowRoot.appendChild(template.content.cloneNode(true));
       this.shadowRoot.querySelector("#contactTypeLogo").src = this.getAttribute("contactTypeLogo");
-      this.shadowRoot.querySelector("#desc").innerText = this.getAttribute("desc");
       this.shadowRoot.querySelector("#action").innerText = this.getAttribute("buttonText");
       this.shadowRoot.querySelector("#action").addEventListener("click", () => {
         window.open(this.getAttribute("contactLink"));

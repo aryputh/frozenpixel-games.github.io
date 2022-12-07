@@ -6,30 +6,34 @@
     --pixel-5: #108ab1;
     --pixel-6: #06d7a0;
     --pixel-7: #0597e9;
-}
+  }
 
-.gameHolder {
-  background-color: var(--pixel-5);
-  border-radius:25px;
-  padding: 10px;
+.teamHolder {
+  width: 400px;
+  height: 280px;
+  background-color:var(--pixel-5);
+  border-radius: 25px;
   display:flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
-  justify-content:top;
-  color: black;
+  justify-content: center;
 }
 
-.gameHolder:hover {
+.teamHolder:hover {
 background-color: var(--pixel-6);
 }
 
-.gameImage {
-  width:300px;
-  height:220px;
-  border-radius:25px;
+.image {
+  border-radius: 25px;
+  width: 110px;
+  height: 110px;
 }
 
-.download {
+#role {
+  color: white;
+}
+
+.action {
   width: 200px;
   height: 60px;
   font-size: 1rem;
@@ -40,10 +44,6 @@ background-color: var(--pixel-6);
   background-color: var(--pixel-1);
 }
 
-.download:hover {
-  background-color: var(--pixel-2)
-}
-
-#desc {
-  color: white;
+.action:hover {
+  background-color: var(--pixel-2); 
 }
