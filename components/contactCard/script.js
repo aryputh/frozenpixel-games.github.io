@@ -1,8 +1,8 @@
-fetch("./components/contactCard/index.html")
-    .then(stream => stream.text())
-    .then(text => define(text));
+import { fetchHTML } from "../../scripts/global.js";
 
-function define(html) {
+fetchHTML("contactCard");
+
+export function define(html) {
   class ContactCard extends HTMLElement {
     constructor() {
       super();
