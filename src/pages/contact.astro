@@ -1,0 +1,26 @@
+---
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import "../styles/global.css";
+import "../styles/contact.css";
+import ContactItem from "../components/ContactItem";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>Contact Us</title>
+	</head>
+	<body>
+		<Navbar client:load/>
+		<main class="main">
+			<ContactItem client:load logo="/gmail.svg" text="Email us" link="mailto:happygamer3194@gmail.com" />
+			<ContactItem client:load logo="/discord.svg" text="Join Now" link="https://discord.gg/TXfG73z" />
+			<ContactItem client:load logo="/youtube.svg" text="Check out" link="https://www.youtube.com/@happygamer3194" />
+		</main>
+		<Footer />
+	</body>
+</html>

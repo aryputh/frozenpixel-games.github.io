@@ -1,0 +1,31 @@
+---
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import "../styles/global.css";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>Our Team</title>
+	</head>
+	<body>
+		<Navbar client:load />
+		<div class="temp">
+			<h1>Team coming soon!</h1>
+		</div>
+		<!-- <main>
+			<div class="main">
+				<team-card
+					imageSrc="souvlaki42.png"
+					username="Souvlaki42"
+					role="Bot Developer"
+				></team-card>
+			</div>
+		</main> -->
+		<Footer />
+	</body>
+</html>
