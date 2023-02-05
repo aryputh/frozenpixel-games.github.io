@@ -1,1 +1,0 @@
-document.querySelector("footer").innerHTML = `&copy; ${new Date().getFullYear().toString()} FrozenPixel Games`;
