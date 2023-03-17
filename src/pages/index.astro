@@ -1,8 +1,5 @@
 ---
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import "../styles/global.css";
-import "../styles/index.css";
+import "../components/newDesign/main.css";
 ---
 
 <html lang="en">
@@ -14,34 +11,18 @@ import "../styles/index.css";
 		<title>FrozenPixel Games</title>
 	</head>
 	<body>
-		<Navbar client:load />
-		<main class="hero">
-			<img src="/jelly_hunt.svg" class="latestGame hoverable-img" id="latestGame"/>
-			<div class="heroText">
-			  Welcome to FrozenPixel Games's official website.
-			  We are a video game development studio striving
-			  to make the best games for you to play.
-			  Check out our games on playstore and itch.io.
-			  <div class="space"></div>
-			  <div class="downloads">
-				<button class="playStore" id="playStoreLink">
-				  Get from Playstore
-				</button>
-				<button class="itch" id="itchLink">Get from Itch.io</button>
-			  </div>
-			</div>
-		</main>
-		<Footer />
-		<script>
-			document.querySelector("#playStoreLink")?.addEventListener("click", () => {
-  				window.open("https://play.google.com/store/apps/dev?id=5025286485091152628");
-			});
-			document.querySelector("#itchLink")?.addEventListener("click", () => {
-  				window.open("https://happygamer3194.itch.io/");
-			});
-			document.querySelector("#latestGame")?.addEventListener("click", () => {
-  				window.open("https://play.google.com/store/apps/details?id=com.HappyGamer3194_aryputh.JellyHunt");
-			});
-		</script>
+		<div class="background">
+			<nav>
+				<header class="brand">FrozenPixel</header>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/games">Games</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/contact">Contact</a></li>
+				</ul>
+			</nav>
+			<h1 class="title">Welcome to FrozenPixel.</h1>
+			<h1 class="subtitle">We make games.</h1>
+		</div>
 	</body>
 </html>
