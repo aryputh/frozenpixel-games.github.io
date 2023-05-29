@@ -1,5 +1,6 @@
 ---
 import "../components/newDesign/main.css";
+import "../components/newDesign/home.css";
 ---
 
 <html lang="en">
@@ -12,25 +13,31 @@ import "../components/newDesign/main.css";
 	</head>
 	<body>
 		<div class="background">
-			<div class="nav">
+			<nav>
 				<div class="navLeft">
 					<img class="logo" src="fpgLogo.svg" alt="">
 					<h1 class="brandText">FrozenPixel</h1>
 				</div>
 				<div class="navRight">
 					<ul class="links">
-						<li>Home</li>
-						<li>Games</li>
-						<li>About</li>
-						<li>Contact</li>
+						<a href="">Home</a>
+						<a href="">Games</a>
+						<a href="">About</a>
+						<a href="">Contact</a>
 					</ul>
 				</div>
-			</div>
+			</nav>
 
 			<div class="headings">
 				<h1 class="title">Welcome to FrozenPixel.</h1>
 				<h1 class="subtitle">We make games.</h1>
+				<div class="verticalSpaceLarge"></div>
+				<button class="gamesButton">Explore Games</button>
 			</div>
+
+			<footer>
+				<span>&copy; 2023 FrozenPixel Games</span> <!-- Todo: Write javascript to dynamically set the current year -->
+			</footer>
 		</div>
 	</body>
 </html>
