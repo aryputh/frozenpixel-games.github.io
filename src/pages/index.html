@@ -1,8 +1,3 @@
----
-import "../components/newDesign/main.css";
-import "../components/newDesign/home.css";
----
-
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -10,12 +5,14 @@ import "../components/newDesign/home.css";
 		<meta name="generator" content={Astro.generator} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>FrozenPixel Games</title>
+		<link rel="stylesheet" href="../styles/main.css">
+		<link rel="stylesheet" href="../styles/home.css">
 	</head>
 	<body>
 		<div class="background">
 			<nav>
 				<div class="navLeft">
-					<img class="logo" src="fpgLogo.svg" alt="">
+					<img class="logo" src="../../public/fpgLogo.svg" alt="">
 					<h1 class="brandText">FrozenPixel</h1>
 				</div>
 				<div class="navRight">
