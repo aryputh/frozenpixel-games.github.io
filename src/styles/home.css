@@ -26,17 +26,15 @@
 }
 
 .subtitle {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .gamesButton{
     background-color: #ffffff;
     color: black;
-    transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .gamesButton:hover{
-    background-color: var(--hoverColor);
-    border: none;
-    color: white;
+    border-radius: 40px;
 }
