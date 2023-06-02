@@ -82,3 +82,80 @@
     aspect-ratio: 1;
     margin-inline: 5px;
 }
+
+@media screen and (max-width: 1170px){
+
+    .gameName{
+        font-size: 2rem;
+    }
+    
+    .gameDescription{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 950px){
+
+    .titleText{
+        font-size: 3.5rem;
+    }
+
+    .gameName{
+        font-size: 1.8rem;
+    }
+    
+    .gameDescription{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 780px){
+
+    .gameHolder{
+        aspect-ratio: 3;
+    }
+
+    .titleText{
+        font-size: 3rem;
+    }
+    
+}
+
+@media screen and (max-width:720px) {
+    .gameImage{
+        display: none;
+    }
+
+    .gameInformation{
+        width: 100%;
+        text-align: center;
+    }
+
+    .gameHolder{
+        aspect-ratio: 2.5;
+    }
+
+    .titleText{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .gameHolder{
+        aspect-ratio: 2;
+    }
+}
+
+@media screen and (max-width: 510px){
+    .gameHolder{
+        aspect-ratio: 1.5;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .gameHolder{
+        aspect-ratio: 1;
+    }
+}

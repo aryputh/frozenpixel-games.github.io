@@ -16,9 +16,11 @@
 
 .aboutUsText{
     width: 100vw;
-    height: calc(100vh - 10vh - 200px - 60px);
+    min-height: calc(100vh - 10vh - 200px - 60px);
+    height: fit-content;
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .text{
