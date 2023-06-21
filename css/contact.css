@@ -1,0 +1,64 @@
+:root {
+	--footerTextColor: black;
+}
+
+.links > a{
+    color: black;
+}
+
+.title{
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactUsText{
+    width: 100vw;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    max-width: 95vw;
+    font-size: 1.5rem;
+}
+
+a{
+    color: var(--hoverColor);
+}
+
+.socialLinks{
+    width: 100vw;
+    height: calc(100vh - 10vh - 90px - 60px - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.link > h1{
+    transition: 0.4s ease-in-out;
+}
+
+.link:hover > h1{
+    color: var(--hoverColor);
+}
+
+.link > img{
+    width: 50px;
+    height: 50px;
+}

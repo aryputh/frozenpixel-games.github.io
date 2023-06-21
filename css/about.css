@@ -1,0 +1,29 @@
+:root {
+	--footerTextColor: black;
+}
+
+.links > a{
+    color: black;
+}
+
+.title{
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutUsText{
+    width: 100vw;
+    min-height: calc(100vh - 10vh - 200px - 60px);
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    overflow-wrap: break-word;
+}
+
+.text{
+    max-width: 95vw;
+    font-size: 1.5rem;
+}

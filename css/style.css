@@ -1,0 +1,119 @@
+/* This style.css file contains all the base styles, ie, styles which are common across all pages.*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Inter", sans-serif;
+}
+
+body {
+	font-size: 16px;
+	overflow-x: hidden;
+}
+
+:root {
+	--hoverColor: #68d8d6;
+	--footerTextColor: white;
+}
+
+.logo {
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+}
+
+.brandText {
+	margin: 10px;
+	font-size: 2.5rem;
+	color: var(--footerTextColor);
+}
+
+.titleText{
+    font-size: 4rem;
+	text-decoration: underline;
+
+}
+
+nav {
+	width: 100vw;
+	height: 10vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navLeft {
+	display: flex;
+	margin: 2vw;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+}
+
+.navRight {
+	display: flex;
+	margin: 2vw;
+}
+
+.links {
+	display: flex;
+}
+
+.links > a {
+	font-size: 1rem;
+	margin: 10px;
+	text-decoration: none;
+	color: white;
+	transition: color 0.4s ease-in-out;
+}
+
+.links > a:hover {
+	color: var(--hoverColor);
+}
+
+button {
+	min-width: 200px;
+	width: fit-content;
+	height: 55px;
+	border-radius: 10px;
+	border: none;
+	font-size: 1rem;
+	transition: 0.4s ease-in-out;
+}
+
+.verticalSpaceSmall {
+	height: 20px;
+}
+
+.verticalSpaceLarge {
+	height: 40px;
+}
+
+footer {
+	width: 100vw;
+	height: 60px;
+	font-size: 1rem;
+	color: var(--footerTextColor);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+}
+
+@media screen and (max-width: 720px) {
+	nav {
+		height: fit-content;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.navLeft,
+	.navRight {
+		margin: 0px;
+	}
+}
