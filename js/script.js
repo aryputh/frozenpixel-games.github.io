@@ -2,7 +2,7 @@
 
 import { Navbar } from "./navbar.js";
 import { renderGame } from "./games.js";
-import data from "../public/data.json" assert { type: "json" };
+import { data } from "../public/data.js";
 
 customElements.define("navbar-element", Navbar);
 

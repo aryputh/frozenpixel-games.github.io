@@ -1,4 +1,4 @@
-{
+export const data = {
 	"links": {
 		"youtubeLink": "https://www.youtube.com/@happygamer3194",
 		"discordLink": "https://discord.gg/TXfG73z",
