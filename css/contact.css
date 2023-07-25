@@ -29,7 +29,7 @@ a {
 
 .socialLinks {
 	width: 100vw;
-	height: calc(100vh - 10vh - 90px - 60px - 200px);
+	height: calc(100vh - 31vh - 90px - 60px - 200px);
 	display: flex;
 	justify-content: center;
 	align-items: center;
