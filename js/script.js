@@ -10,8 +10,16 @@ const footer = document.querySelector("footer");
 const aboutUs = document.querySelector("#about-text");
 const contactUs = document.querySelector("#contact-text");
 const gamesContainer = document.querySelector("#gamesContainer");
+const backgroundContainer = document.querySelector("#background");
 const rewrites = document.querySelectorAll(".rewrite");
 const links = document.querySelectorAll(".socialLinks a");
+
+const imageSources = [
+	"../public/background1.jpg",
+	"../public/background2.jpg",
+	"../public/background3.png",
+	"../public/background4.png",
+];
 
 const aboutUsText = `
 FrozenPixel Games is a studio founded in 2020 with the goal of providing challenging and engaging games for everyone. We develop games for a variety of platforms including Android and PC.
@@ -56,3 +64,21 @@ if (gamesContainer != null)
 	data.games.forEach((game) =>
 		renderGame(game, gamesContainer, document, window)
 	);
+
+if (backgroundContainer != null) {
+	let index = 0;
+
+	setInterval(() => {
+		if (index == imageSources.length - 1) {
+			index = 0;
+		} else {
+			index += 1;
+		}
+
+		backgroundContainer.style.opacity = "0";
+		setTimeout(() => {
+			backgroundContainer.style.backgroundImage = `url(${imageSources[index]})`;
+			backgroundContainer.style.opacity = "1";
+		}, 200);
+	}, 5000);
+}
