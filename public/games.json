@@ -1,0 +1,110 @@
+[
+  {
+    "cardColor": "#F1DFB1",
+    "imageUrl": "https://img.itch.zone/aW1nLzEyNTU1MTc0LnBuZw==/315x250%23c/EczFqb.png",
+    "gameTitle": "Unearth - Facets of Panacea",
+    "gameDescription":"You go to a mysterious island.",
+    "gameGenre": "Adventure",
+    "gameIcon": "fa-brands fa-windows",
+    "gameUrl": "https://happygamer3194.itch.io/ufop"
+  },
+  {
+    "cardColor": "#877C70",
+    "imageUrl": "https://img.itch.zone/aW1nLzEyNDc0NjE4LnBuZw==/315x250%23c/EmOg4Z.png",
+    "gameTitle": "This is Teamwork",
+    "gameDescription": "Work together and escape the caves.",
+    "gameGenre": "Strategy",
+    "gameIcon": "fa-brands fa-windows",
+    "gameUrl": "https://happygamer3194.itch.io/this-is-teamwork"
+  },
+  {
+    "cardColor": "#E4D6C4",
+    "imageUrl": "https://img.itch.zone/aW1nLzEyNzcwMzg5LnBuZw==/315x250%23c/QJNzAj.png",
+    "gameTitle": "Casual Miniature Golf",
+    "gameDescription": "Relax, enjoy, putt the ball.",
+    "gameGenre": "Strategy",
+    "gameIcon": "fa-brands fa-windows",
+    "gameUrl": "https://happygamer3194.itch.io/mini-golf"
+  },
+  {
+    "cardColor": "#E1F3CE",
+    "imageUrl": "https://img.itch.zone/aW1nLzExMDgzMzgwLnBuZw==/315x250%23c/CHDtxk.png",
+    "gameTitle": "A Light in The Darkness",
+    "gameDescription": "A short and atmospheric puzzle platformer.",
+    "gameGenre": "Platformer",
+    "gameIcon": "fa-brands fa-windows",
+    "gameUrl": "https://happygamer3194.itch.io/alitd"
+  },
+  {
+    "cardColor": "#ECCB99",
+    "imageUrl": "https://img.itch.zone/aW1nLzk4NjczMjEucG5n/315x250%23c/ngsWgf.png",
+    "gameTitle": "Dave the Watcher",
+    "gameDescription": "You're in a deadly factory, can you escape?",
+    "gameGenre": "Platformer",
+    "gameIcon": "fa-brands fa-windows",
+    "gameUrl": "https://happygamer3194.itch.io/dave-the-watcher"
+  },
+  {
+    "cardColor": "#FBD7B5",
+    "imageUrl": "https://img.itch.zone/aW1nLzY1ODU1MjcucG5n/315x250%23c/CT852X.png",
+    "gameTitle": "Jelly Hunt",
+    "gameDescription": "A short, story-based platformer.",
+    "gameGenre": "Platformer",
+    "gameIcon": "fa-brands fa-android",
+    "gameUrl": "https://happygamer3194.itch.io/jelly-hunt"
+  },
+  {
+    "cardColor": "#FF914D",
+    "imageUrl": "https://img.itch.zone/aW1nLzc2OTY1NzcucG5n/315x250%23c/%2B19oUb.png",
+    "gameTitle": "Gravity Swapper",
+    "gameDescription": "Dodge and navigate through incoming obstacles!",
+    "gameGenre": "Platformer",
+    "gameIcon": "fa-brands fa-windows",
+    "gameUrl": "https://happygamer3194.itch.io/gravity-swapper"
+  },
+  {
+    "cardColor": "#93CBFF",
+    "imageUrl": "https://img.itch.zone/aW1nLzk0Mjk2MTMucG5n/315x250%23c/EDtfaS.png",
+    "gameTitle": "The Lost Spirit",
+    "gameDescription": "A simplistic puzzle game with steampunk.",
+    "gameGenre": "Puzzle",
+    "gameIcon": "fa-brands fa-windows",
+    "gameUrl": "https://happygamer3194.itch.io/the-lost-spirit"
+  },
+  {
+    "cardColor": "#FCB472",
+    "imageUrl": "https://img.itch.zone/aW1nLzkzMTMyNzEucG5n/315x250%23c/Sqi2kS.png",
+    "gameTitle": "HappyLine",
+    "gameDescription": "Tap to the music and enjoy the levels!",
+    "gameGenre": "Rhythm",
+    "gameIcon": "fa-brands fa-windows",
+    "gameUrl": "https://happygamer3194.itch.io/happyline"
+  },
+  {
+    "cardColor": "#C5C5C5",
+    "imageUrl": "https://img.itch.zone/aW1nLzY3Njc1OTUucG5n/315x250%23c/Jbv6ls.png",
+    "gameTitle": "Elemental Wizard",
+    "gameDescription": "Create elements in this educational game!",
+    "gameGenre": "Education",
+    "gameIcon": "fa-brands fa-windows",
+    "gameUrl": "https://happygamer3194.itch.io/mini-ping"
+  },
+  {
+    "cardColor": "#FFDE58",
+    "imageUrl": "https://img.itch.zone/aW1nLzg5ODc4NzIucG5n/315x250%23c/SxVFaa.png",
+    "gameTitle": "Mini Ping - Glow Edition",
+    "gameDescription": "Play against a friend in Mini Ping!",
+    "gameGenre": "Action",
+    "gameIcon": "fa-brands fa-windows",
+    "gameUrl": "https://happygamer3194.itch.io/mini-ping"
+  },
+  {
+    "cardColor": "#49C9DE",
+    "imageUrl": "https://img.itch.zone/aW1nLzQwNTM3MjUucG5n/315x250%23c/xtkN0Q.png",
+    "gameTitle": "Musical Journey",
+    "gameDescription": "Tap to the beats in this rhythm game!",
+    "gameGenre": "Adventure",
+    "gameIcon": "fa-brands fa-windows",
+    "gameUrl": "https://happygamer3194.itch.io/musical-journey"
+  }
+]

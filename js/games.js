@@ -1,55 +1,45 @@
-// This JavaScript file is about the game cards' renderer
+// This JavaScript file is about the game cards
 
-export function renderGame(game, container, document, window) {
-	let gameHolder = document.createElement("div");
-	let gameHolderChild = document.createElement("div");
-	let gameImage = document.createElement("img");
-	let gameInformation = document.createElement("div");
-	let gameName = document.createElement("h1");
-	let gameDescription = document.createElement("p");
-	let download = document.createElement("button");
-	let os = document.createElement("img");
-
-	gameHolder.classList.add("gameHolder");
-	gameHolderChild.classList.add("gameHolderChild");
-	gameImage.classList.add("gameImage");
-	gameInformation.classList.add("gameInformation");
-	gameName.classList.add("gameName");
-	gameDescription.classList.add("gameDescription");
-	download.classList.add("download");
-	os.classList.add("os");
-
-	gameImage.src = game.gameImage;
-	gameName.innerText = game.gameName;
-	gameDescription.innerText = game.gameDescription;
-	download.innerText = "Download for ";
-	os.src = game.gamePlatformIcon;
-
-	gameImage.loading = "lazy";
-	os.loading = "lazy";
-
-	gameHolder.style.backgroundColor = game.gameCardColor;
-	download.style.backgroundColor = game.gameDownloadButtonColor;
-
-	download.addEventListener("mouseover", () => {
-		download.style.borderRadius = "40px";
+fetch("../public/games.json")
+	.then((response) => response.json())
+	.then((data) => {
+		data.forEach((game) => {
+			renderGame(game, ".games-container");
+		});
+	})
+	.catch((error) => {
+		console.error("Error fetching game data:", error);
 	});
 
-	download.addEventListener("mouseout", () => {
-		download.style.borderRadius = "10px";
-	});
+function renderGame(game, selector) {
+	const container = document.querySelector(selector);
+	if (!container) return;
 
-	download.addEventListener("click", () => {
-		window.open(game.gameDownloadLink);
-	});
-
-	gameHolder.appendChild(gameHolderChild);
-	gameHolderChild.appendChild(gameImage);
-	gameHolderChild.appendChild(gameInformation);
-	gameInformation.appendChild(gameName);
-	gameInformation.appendChild(gameDescription);
-	gameInformation.appendChild(download);
-	download.appendChild(os);
-
-	container.appendChild(gameHolder);
+	const gameElement = document.createElement("div");
+	gameElement.className = "game";
+	gameElement.style.backgroundColor = game.cardColor;
+	gameElement.innerHTML = `
+	<img
+	class="game-image"
+	src="${game.imageUrl}"
+	loading="lazy"
+	alt="${game.gameTitle}"
+/>
+<!-- game image url -->
+<h2 class="game-title">
+	<a href="${game.gameUrl}"
+		>${game.gameTitle}</a
+	>
+</h2>
+<!-- title / link -->
+<p class="game-description">${game.gameDescription}</p>
+<!-- description -->
+<p class="game-genre">${game.gameGenre}</p>
+<!-- genre -->
+<span class="game-icon">
+	<i class="${game.gameIcon}"></i>
+	<!-- icon-class -->
+</span>
+	`;
+	container.appendChild(gameElement);
 }

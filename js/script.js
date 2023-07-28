@@ -1,15 +1,12 @@
 // This JavaScript file is linked to all pages.
-
-import { Navbar } from "./navbar.js";
-import { renderGame } from "./games.js";
 import { data } from "../public/data.js";
+import { Navbar } from "./navbar.js";
 
 customElements.define("navbar-element", Navbar);
 
 const footer = document.querySelector("footer");
 const aboutUs = document.querySelector("#about-text");
 const contactUs = document.querySelector("#contact-text");
-const gamesContainer = document.querySelector("#gamesContainer");
 const backgroundContainer = document.querySelector("#background");
 const rewrites = document.querySelectorAll(".rewrite");
 const links = document.querySelectorAll(".socialLinks a");
@@ -42,10 +39,7 @@ else console.error("No footer found!");
 
 if (rewrites != null && rewrites.length !== 0)
 	rewrites.forEach((rewrite) => {
-		if (
-			location.hostname === "localhost" ||
-			location.hostname === "127.0.0.1"
-		)
+		if (location.hostname === "localhost" || location.hostname === "127.0.0.1")
 			rewrite.href = `${rewrite.href}.html`;
 	});
 else console.error("No rewrites found!");
@@ -59,11 +53,6 @@ if (links != null && links.length !== 0) {
 if (aboutUs != null) aboutUs.innerText = aboutUsText;
 
 if (contactUs != null) contactUs.innerHTML = contactUsText;
-
-if (gamesContainer != null)
-	data.games.forEach((game) =>
-		renderGame(game, gamesContainer, document, window)
-	);
 
 if (backgroundContainer != null) {
 	let index = 0;
